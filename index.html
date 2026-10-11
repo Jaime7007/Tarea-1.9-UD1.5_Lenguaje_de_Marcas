@@ -9,6 +9,31 @@
     <form action="index.html" method="get">
         <fieldset>
             <legend>Datos personales by Jaime</legend>
+            
+            <p>
+                <!-- label: etiqueta para un campo; for: enlaza con el id -->
+                <label for="nombre">Nombre:</label><br>
+                <!-- input: campo de entrada; type: tipo de dato; placeholder: texto orientativo; required: obligatorio; autofocus: foco inicial; size: ancho visible; maxlength: caracteres máximos -->
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required autofocus size="30" maxlength="40">
+            </p>
+
+            <p>
+                <label for="pass">Contraseña:</label><br>
+                <!-- minlength: longitud mínima permitida -->
+                <input type="password" id="pass" name="password" minlength="8">
+            </p>
+
+            <p>
+                <label for="email">Correo:</label><br>
+                <!-- type="email": valida formato de correo electrónico -->
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="tel">Teléfono:</label><br>
+                <!-- type="tel": campo telefónico; pattern: expresión regular de validación -->
+                <input type="tel" id="tel" name="telefono" pattern="[0-9]{9}">
+            </p>
         </fieldset>
     </form>
 </body>
