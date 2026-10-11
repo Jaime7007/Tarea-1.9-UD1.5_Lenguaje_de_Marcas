@@ -193,5 +193,15 @@
             <button type="submit">Ver Mapa</button>
         </p>
     </form>
+    <form action="https://validator.w3.org/nu/" method="get">
+        <p>
+            <!-- type="url": valida direcciones web; name="doc": parámetro obligatorio que espera el validador -->
+            <input type="url" name="doc" value="https://jaime7007.github.io/Tarea-1.9-UD1.5_Lenguaje_de_Marcas/"><br>
+            <!-- type="checkbox": opción múltiple; name="showsource" y value="yes": muestra el código fuente numerado -->
+            <label><input type="checkbox" name="showsource" value="yes"> Ver el código</label>
+            <!-- button type="submit": botón moderno que envía la URL a validar -->
+            <button type="submit">Validar</button>
+        </p>
+    </form>
 </body>
 </html>
