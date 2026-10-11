@@ -34,6 +34,30 @@
                 <!-- type="tel": campo telefónico; pattern: expresión regular de validación -->
                 <input type="tel" id="tel" name="telefono" pattern="[0-9]{9}">
             </p>
+            
+            <p>
+                <label for="nacimiento">Fecha de nacimiento:</label><br>
+                <!-- type="date": selector de fecha -->
+                <input type="date" id="nacimiento" name="fnac">
+            </p>
+
+            <p>
+                <label for="foto">Foto:</label><br>
+                <!-- type="file": selector de archivos -->
+                <input type="file" id="foto" name="archivo">
+            </p>
+
+            <p>
+                <label for="curso">Curso:</label><br>
+                <!-- value: valor por defecto; readonly: campo de solo lectura -->
+                <input type="text" id="curso" name="curso" value="2026-27" readonly>
+            </p>
+
+            <p>
+                <label for="centro">Centro:</label><br>
+                <!-- disabled: campo deshabilitado que no se envía -->
+                <input type="text" id="centro" name="centro" value="IES La Asunción" disabled>
+            </p>
         </fieldset>
     </form>
 </body>
