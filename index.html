@@ -6,7 +6,7 @@
     <title>Tarea 1.9 - Formularios HTML</title>
 </head>
 <body>
-    <form action="index.html" method="post">
+    <form action="index.html" method="get">
         <fieldset>
             <legend>Datos personales by Jaime</legend>
             
@@ -205,5 +205,8 @@
     </form>
     <h2>¿Qué problema de seguridad descubres en el historial por haber enviado la inscripción con GET? ¿Qué método recomienda el artículo para un formulario como este y por qué?</h2>
     <p>Al enviar los datos del formulario de inscripción mediante el método GET, toda la información confidencial introducida (como el nombre, el correo, el teléfono y la contraseña) queda expuesta de forma totalmente visible tanto en la barra de direcciones de la URL como registrada de manera permanente en el historial del navegador. Esto supone un grave problema de seguridad, ya que cualquier persona que tenga acceso físico al equipo o al historial podrá ver datos personales y contraseñas en texto plano. Para evitar esto, el artículo recomienda utilizar el método POST en formularios que contengan datos sensibles o de registro, ya que este método envía la información oculta dentro del cuerpo de la petición HTTP y no en la URL.</p>
+
+    <h2>¿Qué ocurre al enviar la inscripción con POST? Según el artículo, ¿qué tendría que haber en el servidor para procesar esos datos?</h2>
+    <p>Al intentar enviar el formulario de inscripción configurado con el método POST, el servidor devuelve un error de tipo "405 Not Allowed" (Método no permitido). Según se explica en el artículo, esto sucede porque los servidores estáticos como GitHub Pages solo están preparados para servir archivos y no pueden gestionar envíos POST. Para poder procesar y recibir correctamente esos datos, tendría que haber en el servidor algún programa o script de backend (como PHP, Python, Node.js u otro lenguaje del lado del servidor) capaz de capturar, interpretar y gestionar la información enviada en el cuerpo de la petición HTTP.</p>
 </body>
 </html>
