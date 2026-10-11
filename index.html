@@ -112,7 +112,7 @@
                 <!-- type="month": selector de mes -->
                 <input type="month" id="mes" name="mes">
             </p>
-            
+
             <p>
                 <label for="modulos">Módulos:</label><br>
                 <!-- select: lista desplegable; multiple: permite selección múltiple -->
@@ -132,6 +132,31 @@
                 <textarea id="comentarios" name="comentarios" rows="4" cols="30"></textarea>
             </p>
         </fieldset>
+        <!-- input de tipo submit, reset y button -->
+        <p>
+            <!-- type="submit": envía los datos del formulario al servidor -->
+            <input type="submit" value="Enviar (input)">
+            <!-- type="reset": restablece todos los campos del formulario a sus valores iniciales -->
+            <input type="reset" value="Restablecer (input)">
+            <!-- type="button": botón genérico interactivo sin comportamiento por defecto -->
+            <input type="button" value="Botón genérico (input)">
+        </p>
+
+        <!-- input de tipo image, con src y alt -->
+        <p>
+            <!-- type="image": funciona como un botón de envío gráfico; src: ruta de la imagen; alt: texto alternativo si la imagen no carga -->
+            <input type="image" src="img/img_boton.png" alt="Enviar imagen">
+        </p>
+
+        <!-- button de tipo submit, reset y button -->
+        <p>
+            <!-- button type="submit": elemento de botón moderno que envía el formulario -->
+            <button type="submit">Enviar (button)</button>
+            <!-- button type="reset": elemento de botón moderno que limpia el formulario -->
+            <button type="reset">Restablecer (button)</button>
+            <!-- button type="button": elemento de botón moderno genérico -->
+            <button type="button">Botón genérico (button)</button>
+        </p>
     </form>
 </body>
 </html>
