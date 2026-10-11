@@ -112,6 +112,25 @@
                 <!-- type="month": selector de mes -->
                 <input type="month" id="mes" name="mes">
             </p>
+            
+            <p>
+                <label for="modulos">Módulos:</label><br>
+                <!-- select: lista desplegable; multiple: permite selección múltiple -->
+                <select id="modulos" name="modulos" multiple>
+                    <!-- optgroup: agrupa opciones; label: nombre del grupo -->
+                    <optgroup label="Primero">
+                        <!-- option: opción individual; selected: seleccionada por defecto -->
+                        <option value="lm" selected>Lenguaje de Marcas</option>
+                        <option value="ed">Entornos de Desarrollo</option>
+                    </optgroup>
+                </select>
+            </p>
+
+            <p>
+                <label for="comentarios">Comentarios:</label><br>
+                <!-- textarea: cuadro de texto grande; rows, cols: filas y columnas -->
+                <textarea id="comentarios" name="comentarios" rows="4" cols="30"></textarea>
+            </p>
         </fieldset>
     </form>
 </body>
