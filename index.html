@@ -76,6 +76,42 @@
                 <label><input type="checkbox" name="interes" value="lectura"> Lectura</label>
                 <label><input type="checkbox" name="interes" value="musica"> Música</label>
             </p>
+            
+            <p>
+                <label for="horas">Horas de estudio:</label><br>
+                <!-- type="number": selector numérico; min, max, step: límites e incremento -->
+                <input type="number" id="horas" name="horas" min="0" max="10" step="2">
+            </p>
+
+            <p>
+                <label for="nivel">Nivel:</label><br>
+                <!-- type="range": control deslizante -->
+                <input type="range" id="nivel" name="nivel" min="1" max="10">
+            </p>
+
+            <p>
+                <label for="color">Color favorito:</label><br>
+                <!-- type="color": selector de colores -->
+                <input type="color" id="color" name="color">
+            </p>
+
+            <p>
+                <label for="hora">Hora:</label><br>
+                <!-- type="time": selector de hora -->
+                <input type="time" id="hora" name="hora">
+            </p>
+
+            <p>
+                <label for="semana">Semana:</label><br>
+                <!-- type="week": selector de semana -->
+                <input type="week" id="semana" name="semana">
+            </p>
+
+            <p>
+                <label for="mes">Mes:</label><br>
+                <!-- type="month": selector de mes -->
+                <input type="month" id="mes" name="mes">
+            </p>
         </fieldset>
     </form>
 </body>
