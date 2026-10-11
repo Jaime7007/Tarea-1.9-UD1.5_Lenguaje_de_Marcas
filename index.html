@@ -159,18 +159,39 @@
         </p>
     </form>
     <form action="https://es.wikipedia.org/w/index.php" method="get">
-    <p>
-        <label for="busqueda-wiki">Buscar en Wikipedia:</label><br>
-        <!-- type="search": campo de búsqueda; list: conecta con un datalist -->
-        <input type="search" id="busqueda-wiki" name="search" list="sugerencias">
-        <!-- datalist: lista de opciones sugeridas -->
-        <datalist id="sugerencias">
-            <option value="Formulario web">
-            <option value="HTML">
-            <option value="Protocolo de transferencia de hipertexto">
-        </datalist>
-        <button type="submit">Buscar</button>
-    </p>
-</form>
+        <p>
+            <label for="busqueda-wiki">Buscar en Wikipedia:</label><br>
+            <!-- type="search": campo de búsqueda; list: conecta con un datalist -->
+            <input type="search" id="busqueda-wiki" name="search" list="sugerencias">
+            <!-- datalist: lista de opciones sugeridas -->
+            <datalist id="sugerencias">
+                <option value="Formulario web">
+                <option value="HTML">
+                <option value="Protocolo de transferencia de hipertexto">
+            </datalist>
+            <button type="submit">Buscar</button>
+        </p>
+    </form>
+    <form action="https://www.openstreetmap.org/search" method="get">
+        <p>
+            <!-- label: etiqueta para el selector; for: enlaza con el id -->
+            <label for="mapa">Ciudad:</label><br>
+            <!-- select: lista desplegable; name="query": parámetro exacto esperado por el buscador de OpenStreetMap -->
+            <select id="mapa" name="query">
+                <!-- optgroup: agrupa opciones por provincia; label: nombre del grupo -->
+                <optgroup label="Alicante">
+                    <!-- option: opción individual con su valor -->
+                    <option value="Elche">Elche</option>
+                    <option value="Alicante">Alicante</option>
+                </optgroup>
+                <optgroup label="Valencia">
+                    <option value="Gandía">Gandía</option>
+                    <option value="Valencia">Valencia</option>
+                </optgroup>
+            </select>
+            <!-- button type="submit": botón moderno que envía el formulario -->
+            <button type="submit">Ver Mapa</button>
+        </p>
+    </form>
 </body>
 </html>
